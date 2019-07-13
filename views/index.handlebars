@@ -1,0 +1,45 @@
+<h1>Undead Burgers, Model View Controller (MVC) Style!</h1>
+{{!-- <img src="../public/assets/img/ZombieBurger.jpg" alt="Zombie Burger Logo" class="center"> --}}
+{{!-- <img src="http://roadtips.typepad.com/.a/6a00d8341cad8253ef0162fc1cea3e970d-320wi" alt="Zombie Burger Logo" class="center"> --}}
+{{!-- <img src="https://ibb.co/M6k1tJk" alt="Zombie Burger Logo" class="center"> --}}
+
+<center>
+<img src="https://i.ibb.co/M6k1tJk/Zombie-Burger.jpg" alt="Zombie-Burger" border="0"/>
+</center>
+
+<h2>Feast Upon the Flesh of This List of Burgers!</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless eaten}}
+      {{> burgers/burger-block eaten=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Already Been Chewed (ABC) Burgers!</h2>
+<ul>
+  {{#each burgers}}
+    {{#if eaten}}
+      {{> burgers/burger-block eaten=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>-= EAT ME NEXT =-</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burger">Victim's Name:</label>
+    <input type="text" id="burger" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="eaten">Is this one already eaten?</label><br>
+    <input type="radio" name="eaten" value="0" checked> It's a meal ready to eat!
+    <BR>
+    <input type="radio" name="eaten" value="1"> I have eaten its flesh, drank its blood, and assimilated its life to sustain me!<br>
+  </div>
+
+  <button type="submit">Add Devourable Burger!</button>
+</form>

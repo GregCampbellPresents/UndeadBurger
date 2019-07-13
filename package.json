@@ -1,0 +1,27 @@
+{
+  "name": "mvc_design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts":
+  {
+    "start": "node BurgerServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies":
+  {
+    "4": "0.0.0",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "graceful-fs": "^4.1.15",
+    "mysql": "^2.16.0",
+    "natives": "^1.1.6"
+  },
+  "devDependencies":
+  {
+    "handlebars-helper-css": "^0.1.0"
+  }
+}

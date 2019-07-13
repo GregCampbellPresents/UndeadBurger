@@ -1,0 +1,63 @@
+/* GENERAL STYLES */
+body
+{
+  /* background-color: green; */
+  background-color: #bcb531;
+  color: black;
+  font-weight: bold;
+}
+
+/* LIST TYPE ELEMENTS */
+li
+{
+  padding: 5px;
+  margin: 5px;
+  background: black;
+  color: white;
+}
+
+/* H1 styling */
+h1
+{
+  color: white;
+  text-align: center;
+}
+
+/* H2 styling */
+h2
+{
+  color: red;
+  /* Red-Pinkish */
+  /* color: #F1948A; */ 
+}
+
+/* LABEL TYPE ELEMENTS */
+.label
+{
+  font-weight: bold;
+}
+
+/* ELEMENTS ON CREATE UPDATE FORM */
+/* .create-update-form */
+.create-form
+{
+  padding: 5px;
+  margin: 5px;
+  /* background: green; */
+  /* background: greenyellow; */
+}
+
+/* FORM GROUP ELEMENTS */
+.form-group
+{
+  margin-bottom: 5px;
+}
+
+/* CENTERED ELEMENTS */
+.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
